@@ -3,3 +3,4 @@ gunicorn
 httplib2
 requests
 beautifulsoup4
+html5lib
