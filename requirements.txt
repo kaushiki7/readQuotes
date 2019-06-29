@@ -1,2 +1,5 @@
 Flask
+gunicorn
+httplib2
+requests
 beautifulsoup4
