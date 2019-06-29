@@ -5,7 +5,6 @@
     <style>
     body {
       background-image: url(https://images.wallpaperscraft.com/image/notebook_write_watch_pen_67636_1280x720.jpg);
-
     }
     </style>
     <link rel="stylesheet" href="styles.css">
@@ -29,8 +28,10 @@
         <hr style="border: 1px solid black">
         <br>
         <br>
-        <h2><p>"{{ imp }}"</p></h2>
-        <h3><p>"{{ writer }}"</p></h3>
+        {% block content %}{% endblock %}
+        <div class="text-center">
+          <a href="{{ url_for('quotes') }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Read Quotes</a>
+        </div>
         <br>
         <br>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -39,6 +40,6 @@
       </div>
     </section>
   <br>
-  {% block content %}{% endblock %}
   </body>
 </html>
+
